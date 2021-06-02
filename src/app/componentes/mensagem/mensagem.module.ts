@@ -6,9 +6,7 @@ import { MensagemComponent } from './mensagem.component';
 
 @NgModule({
   declarations: [MensagemComponent],
-  imports: [
-    CommonModule
-  ],
-  exports : [MensagemComponent],
+  imports: [CommonModule],
+  exports: [MensagemComponent]
 })
 export class MensagemModule { }

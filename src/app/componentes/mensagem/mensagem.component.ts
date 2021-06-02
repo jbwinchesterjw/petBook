@@ -6,9 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./mensagem.component.css']
 })
 export class MensagemComponent implements OnInit {
-
-  @Input()
-  mensagem ='';
+  @Input() mensagem = '';
   constructor() { }
 
   ngOnInit(): void {

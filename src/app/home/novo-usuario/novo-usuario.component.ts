@@ -27,7 +27,7 @@ export class NovoUsuarioComponent implements OnInit {
       //class ultilitaria do angular que faz validção dos campos verificando se seu formato e valido
       email: ['', [Validators.required, Validators.email]],
       fullName: ['', [Validators.required, Validators.minLength(4)]],
-      userName: ['', [minusculoValidator], [this.usuarioExisteService.usuarioJaExiste]],
+      userName: ['', [minusculoValidator], [this.usuarioExisteService.usuarioJaExiste()]],
       password: [''],
     },
       {
