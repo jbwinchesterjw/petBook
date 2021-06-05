@@ -9,7 +9,8 @@ import { tap } from 'rxjs/operators';
 })
 export class AutenticacaoService {
 
-  constructor(private httpClient: HttpClient, private usuarioService : UsuarioService) { }
+  constructor(private httpClient: HttpClient,
+    private usuarioService : UsuarioService) { }
 
   autenticar(usuario: string, senha: string): Observable<HttpResponse<any>> {
     return this.httpClient.post('http://localhost:3000/user/login', {

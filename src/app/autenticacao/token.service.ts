@@ -20,6 +20,6 @@ export class TokenService {
   }
 
   possueToken(){
-    return !! this.possueToken();
+    return !! this.retornaToken();
   }
 }
